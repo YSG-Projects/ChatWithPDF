@@ -5,8 +5,8 @@ from ChatBot import create_chatbot
 
 st.set_page_config(page_title="Chat with PDF", layout="wide")
 st.title("ChatWithPDF")
+st.header("📄 ChatPDF Clone using GenAI")
 
-st.subtitle("📄 ChatPDF Clone using GenAI")
 
 # Upload PDF
 uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
@@ -48,4 +48,5 @@ if uploaded_file:
         st.markdown(f"**You:** {q}")
         st.markdown(f"**Bot:** {a}")
         st.markdown("---")
+
 
