@@ -1,5 +1,5 @@
 import streamlit as st
-from pdf_reader import read_pdf
+from PDF_reader import read_pdf
 from embeddings import create_vector_store
 from chatbot import create_chatbot
 
@@ -47,3 +47,4 @@ if uploaded_file:
         st.markdown(f"**You:** {q}")
         st.markdown(f"**Bot:** {a}")
         st.markdown("---")
+
