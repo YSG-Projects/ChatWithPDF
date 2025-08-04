@@ -1,7 +1,7 @@
 import streamlit as st
 from PDF_reader import read_pdf
 from embeddings import create_vector_store
-from chatbot import create_chatbot
+from ChatBot import create_chatbot
 
 st.set_page_config(page_title="Chat with PDF", layout="wide")
 
@@ -47,4 +47,5 @@ if uploaded_file:
         st.markdown(f"**You:** {q}")
         st.markdown(f"**Bot:** {a}")
         st.markdown("---")
+
 
