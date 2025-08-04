@@ -1,7 +1,6 @@
 streamlit
-langchain>=0.1.0
+langchain
 openai
-faiss-cpu
-tiktoken
-python-dotenv
 PyPDF2
+faiss-cpu
+python-dotenv

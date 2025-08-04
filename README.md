@@ -1,4 +1,4 @@
-# 📄 ChatWithPDF 
+# 📄 ChatWithPDF Clone using GenAI
 
 A Streamlit-based web app that lets you upload and chat with your PDF files using OpenAI’s LLMs. Inspired by [chatpdf.com](https://www.chatpdf.com), this project leverages LangChain, FAISS, and OpenAI to create a semantic question-answering chatbot from your PDF documents.
 
@@ -35,4 +35,3 @@ cd chatpdf-clone
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
-

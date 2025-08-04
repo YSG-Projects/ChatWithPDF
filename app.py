@@ -47,5 +47,3 @@ if uploaded_file:
         st.markdown(f"**You:** {q}")
         st.markdown(f"**Bot:** {a}")
         st.markdown("---")
-
-
