@@ -2,11 +2,10 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import os
-from dotenv import load_dotenv
+import streamlit as st
 
-# Load OpenAI key from .env file
-load_dotenv()
-openai_key = os.getenv("OPENAI_API_KEY")
+# Get API key from Streamlit Secrets
+openai_key = st.secrets["OPENAI_API_KEY"]
 
 def create_vector_store(text: str) -> FAISS:
     """
@@ -27,3 +26,4 @@ def create_vector_store(text: str) -> FAISS:
     vectordb = FAISS.from_texts(chunks, embeddings)
 
     return vectordb
+
