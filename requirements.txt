@@ -1,6 +1,13 @@
+# Core packages
 streamlit
-langchain
 openai
 PyPDF2
-faiss-cpu
 python-dotenv
+
+# LangChain and its new plugin packages
+langchain>=0.2.0
+langchain-community
+langchain-openai
+
+# FAISS for vector storage (CPU version)
+faiss-cpu
