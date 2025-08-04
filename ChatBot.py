@@ -1,11 +1,10 @@
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
-from dotenv import load_dotenv
 import os
+import streamlit as st
 
-# Load OpenAI API Key
-load_dotenv()
-openai_key = os.getenv("OPENAI_API_KEY")
+# Get API key from Streamlit Secrets
+openai_key = st.secrets["OPENAI_API_KEY"]
 
 def create_chatbot(vectordb):
     """
@@ -25,3 +24,4 @@ def create_chatbot(vectordb):
     )
 
     return qa_chain
+
